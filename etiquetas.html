@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <!-- cuerpo intro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <!-- enlace css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icono <> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- bootstrap -->
+    <title>Diccionario</title>
+</head>
+<body>
+    <div class="menu">
+        <img src="code-school.svg" alt="logo codigo">
+         <p class="titulo"> <a href="index.html">Inicio</a> </p>
+         <p class="titulo"> <a href="etiquetas.html">Etiquetas</a> </p>
+         <p class="titulo"> <a href="eSelfclosing.html">Etiquetas - Selfclosing</a> </p>
+         <p>  </p>
+     </div>
+
+     <div class="container">
+        <nav class="menuV">
+            <p class="subtitulo"> * etiquetas * </p>
+            <ol>
+                <li>  <a href="/html/">  <strong> a </strong></a>  </li>
+                <li>  <a href="/html/"> <strong> div </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> form </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> h1 / h6 </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> p </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> ul / ol / li </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> span </strong> </a>  </li>
+                <li>  <a href="/html/"> <strong> table </strong> </a>  </li>
+            </ol>
+        </nav>
+            
+    
+        <div class="contenedor">
+            <div class="card">
+                <h1> a </h1>
+                <h4> Definicion </h4>
+                <p> La etiqueta a define un enlace hiperactivo, que normalmente se utiliza para vincular una página web a otra.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p > &lt;a href="URL_del_destino"&gt;Texto del enlace&lt;/a&gt;</p>
+                </div>
+
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p> &lt;a href="https://www.ejemplo.com"&gt;Visita nuestro sitio web&lt;/a&gt;</p>
+                
+                    <h4> Ejemplo  ejecutado</h4>
+                    <p> <a href="https://www.ejemplo.com"> Visita nuestro sitio web</a> </p>
+                </div>
+            </div>
+            
+
+            <!-- 2 -->
+            <div class="card">
+                <h1> div </h1>
+                <h4> Definicion </h4>
+                <p>  La etiqueta div define una división o sección en un documento HTML. Se utiliza como un contenedor genérico para otros elementos.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> &lt;div&gt;Contenido &lt;/div&gt;
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p> &lt;div&gt;
+                        <br>
+                        &lt;p&gt;Este es un párrafo dentro de un div.&lt;/p&gt;
+                        <br>
+                    &lt;/div&gt;</p>
+    
+                    <h4> Ejemplo  ejecutado</h4>
+                    <div>
+                        <p>Este es un párrafo dentro de un div</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- 3 -->
+            <div class="card">
+                <h1> form </h1>
+                <h4> Definicion </h4>
+                <p> La etiqueta form define un formulario HTML que permite al usuario ingresar datos que se pueden enviar al servidor para su procesamiento.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> &lt;form action="URL_del_procesador" method="GET/POST">Contenido del formulario&lt;/form&gt;</p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p>&lt;form action="/procesar_formulario.php" method="post"&gt;
+                        <br>
+                        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+                        <br>
+                        &lt;input type="text" id="nombre" name="nombre"&gt;
+                        <br>
+                        &lt;input type="submit" value="Enviar"&gt;
+                        <br>
+                    &lt;/form&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <form action="/procesar_formulario.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+           
+            
+            <!-- 4 -->
+            <div class="card">
+                <h1> h1 - h6 </h1>
+                <h4> Definicion </h4>
+                <p>Las etiquetas h1 a h6 definen encabezados de diferentes niveles, siendo h1 el más importante y h6 el menos importante.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> 
+                        &lt;h1&gt;Texto del encabezado&lt;/h1&gt;            
+                    </p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p>         
+                        &lt;h1&gt;Texto del encabezado&lt;/h1&gt;
+                        <br>
+                        &lt;h2&gt;Texto del encabezado&lt;/h2&gt;
+                        <br>
+                        &lt;h3&gt;Texto del encabezado&lt;/h3&gt;
+                        <br>
+                        &lt;h4&gt;Texto del encabezado&lt;/h4&gt;
+                        <br>
+                        &lt;h5&gt;Texto del encabezado&lt;/h5&gt;
+                        <br>
+                        &lt;h6&gt;Texto del encabezado&lt;/h6&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <h1> Texto aquí </h1>
+                    <h2> Texto aquí </h2>
+                    <h3> Texto aquí</h3>
+                    <h4> Texto aquí</h4>
+                    <h5> Texto aquí</h5>
+                    <h6> Texto aquí </h6>
+                </div>
+                
+            </div>
+           
+            <!-- 5 -->
+            <div class="card">
+                <h1> p </h1>
+            <h4> Definicion </h4>
+            <p> La etiqueta p define un párrafo de texto.</p>
+    
+            <h4> Sintaxis </h4>
+    
+            <div class="sintaxis">
+                <p>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</p>
+            </div>
+    
+            <div class="ejemplo">
+                <h4> Ejemplo  sintaxis</h4>
+                <p>&lt;p&gt; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, quae!.&lt;/p&gt;</p>
+                <h4> Ejemplo  ejecutado</h4>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, maiores.</p>
+            </div>
+            
+            </div>
+            
+            <!-- 6 -->
+            <div class="card">
+                <h1> ul, ol, li </h1>
+                <h4> Definicion </h4>
+                <p> ul crea una lista no ordenada, ol crea una lista ordenada, y li define elementos de lista en ambos tipos de listas.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> &lt;ul&gt; #li dentro &lt;/ul&gt;
+                        &lt;ol&gt; #li dentro &lt;/ol&gt;
+                        &lt;li&gt;Manzanas&lt;/li&gt;
+                    </p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p> &lt;ul&gt;
+                        &lt;li&gt;Manzanas&lt;/li&gt;
+                        &lt;li&gt;Plátanos&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Primer paso&lt;/li&gt;
+                        &lt;li&gt;Segundo paso&lt;/li&gt;
+                    &lt;/ol&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <ul>
+                        <li>Manzanas </li>
+                        <li>Plátanos </li>
+                    </ul>
+                    <ol>
+                        <li>Primer paso</li>
+                        <li>Segundo paso</li>
+                    </ol>
+    
+                </div>
+            </div>
+          
+            
+            <!-- 7 -->
+            <div class="card">
+                <h1> span </h1>
+                <h4> Definicion </h4>
+                <p> La etiqueta span se utiliza para aplicar estilo o comportamiento a una parte específica del texto dentro de un elemento en línea.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> &lt;p&gt;Este es un &lt;span style="color: red;"&gt;texto con estilo&lt;/span&gt;.&lt;/p&gt;</p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p>&lt;p&gt;Este es un &lt;span style="color: red;"&gt;texto con estilo&lt;/span&gt;.&lt;/p&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <p>Este es un <span style="color: red;">texto con estilo</span>.</p>
+                </div>
+    
+                
+            </div>
+           
+            <!-- 8 -->
+            <div class="card">
+                <h1> table </h1>
+                <h4> Definicion </h4>
+                <p> La etiqueta table define una tabla HTML.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> Lorem ipsum dolor sit amet.</p>
+                </div>
+        
+                <h4> Ejemplo </h4>
+                <div class="ejemplo">
+                    <p> &lt;table&gt;
+                        <br>
+                        &lt;tr&gt;
+                        <br>
+                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                            <br>
+                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                        &lt;/tr&gt;
+                        <br>
+                        &lt;tr&gt;
+                        <br>
+                            &lt;td&gt;Dato 1&lt;/td&gt;
+                            <br>
+                            &lt;td&gt;Dato 2&lt;/td&gt;
+                            <br>
+                        &lt;/tr&gt;
+                        <br>
+                    &lt;/table&gt;</p>
+    
+                    <table>
+                        <tr>
+                            <th>Encabezado 1</th>
+                            <th>Encabezado 2</th>
+                        </tr>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+           
+        
+        </div>
+     </div>
+    
+
+</body>
+</html>
