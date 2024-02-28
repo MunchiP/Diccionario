@@ -19,11 +19,43 @@
     <title>Diccionario</title>
 </head>
 <body>
+
+    <div class="superior">
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+        <p class="primerColor"></p>
+        <p class="segundoColor"></p>
+        <p class="tercerColor"></p>
+        <p class="cuartoColor"></p>
+
+    </div>
     <div class="menu">
-        <img src="code-school.svg" alt="logo codigo">
-         <p class="titulo"> <a href="index.html">Inicio</a> </p>
-         <p class="titulo"> <a href="etiquetas.html">Etiquetas</a> </p>
-         <p class="titulo"> <a href="eSelfclosing.html">Etiquetas - Selfclosing</a> </p>
+        <!-- <img src="code-school.svg" alt="logo codigo"> -->
+         <p class="titulo"> <a class="eMenu" href="index.html">Inicio</a> </p>
+         <p class="titulo"> <a class="eMenu" href="etiquetas.html">Etiquetas</a> </p>
+         <p class="titulo"> <a class="eMenu" href="eSelfclosing.html">Etiquetas - Selfclosing</a> </p>
          <p>  </p>
      </div>
 
@@ -32,16 +64,22 @@
             <p class="subtitulo"> * etiquetas * </p>
             <ol>
                 <li>  <a class="etiquetaNombre" href="#a">  <strong> a </strong></a>  </li>
+                <li>  <a class="etiquetaNombre" href="#b"> <strong> b </strong> </a>  </li>
+                <li>  <a class="etiquetaNombre" href="#body"> <strong> body </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#div"> <strong> div </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#form"> <strong> form </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#h1"> <strong> h1 / h6 </strong> </a>  </li>
+                <li>  <a class="etiquetaNombre" href="#html"> <strong> html </strong> </a>  </li>
+                <li>  <a class="etiquetaNombre" href="#head"> <strong> head </strong> </a>  </li>
+                <li>  <a class="etiquetaNombre" href="#i"> <strong> i </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#p"> <strong> p </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#ul"> <strong> ul / ol / li </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#span"> <strong> span </strong> </a>  </li>
+                <li>  <a class="etiquetaNombre" href="#strong"> <strong> strong </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#table"> <strong> table </strong> </a>  </li>
             </ol>
         </nav>
-            
+    </div>     
     
         <div class="contenedor">
             <!-- 1 -->
@@ -64,8 +102,51 @@
                     <p> <a href="https://www.ejemplo.com"> Visita nuestro sitio web</a> </p>
                 </div>
             </div>
+ 
             
             <!-- 2 -->
+            <div class="card">
+                <h1 id="b"> b </h1>
+                <h4> Definicion </h4>
+                <p>  Esta etiqueta dará formato de negrita a cualquier texto que se encuentre entre la etiqueta.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p > &lt;b&gt;....&lt;/b&gt;</p>
+                </div>
+
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p > &lt;b&gt;....&lt;/b&gt;</p>
+
+                    <h4> Ejemplo  ejecutado</h4>
+                    <p > &lt;b&gt;Este texto esta en negrilla&lt;/b&gt;</p>
+                </div>
+
+                
+            </div>
+
+            <!-- 3 -->
+            <div class="card">
+                    <h1 id="body"> body </h1>
+                    <h4> Definicion </h4>
+                    <p> Define la sección del cuerpo de la página web, 
+                        donde se incluyen todos los elementos que se mostrarán en la página.</p>
+            
+                    <h4> Sintaxis </h4>
+            
+                    <div class="sintaxis">
+                        <p > &lt;body&gt;....&lt;/body&gt;</p>
+                    </div>
+
+                    <div class="ejemplo">
+                        <h4> Ejemplo  sintaxis</h4>
+                        <p > &lt;body&gt;....&lt;/body&gt;</p>
+                    </div>
+            </div>
+
+            <!-- 4 -->
             <div class="card">
                 <h1 id="div"> div </h1>
                 <h4> Definicion </h4>
@@ -92,7 +173,7 @@
                 </div>
             </div>
             
-            <!-- 3 -->
+            <!-- 5 -->
             <div class="card">
                 <h1 id="form"> form </h1>
                 <h4> Definicion </h4>
@@ -124,7 +205,7 @@
                 </div>
             </div>
            
-            <!-- 4 -->
+            <!-- 6-->
             <div class="card">
                 <h1 id="h1"> h1 - h6 </h1>
                 <h4> Definicion </h4>
@@ -163,28 +244,101 @@
                 
             </div>
            
-            <!-- 5 -->
+            <!-- 7 -->
             <div class="card">
-                <h1 id="p"> p </h1>
+                <h1 id="html"> html </h1>
+                <h4> Definicion </h4>
+                <p>Define el inicio y el final de un documento HTML</p>
+
+                <h4> Sintaxis </h4>
+
+                <div class="sintaxis">
+                    <p> 
+                        &lt;html&gt;            
+                    </p>
+                </div>
+            </div>
+        
+            <!-- 8 -->
+            <div class="card">
+                <h1 id="head"> head </h1>
+                <h4> Definicion </h4>
+                <p>Define la sección de encabezado de la página, donde se incluyen elementos como el título de la página,
+                    metaetiquetas, scripts, entre otros.</p>
+
+                <h4> Sintaxis </h4>
+
+                <div class="sintaxis">
+                    <p> 
+                        &lt;head&gt;            
+                    </p>
+                </div>
+            </div>
+
+           <!-- 9 -->
+           <div class="card">
+            <h1 id="i"> i </h1>
             <h4> Definicion </h4>
-            <p> La etiqueta p define un párrafo de texto.</p>
+            <p> Esta etiqueta formateará como cursiva cualquier texto entre la etiqueta de apertura.</p>
     
             <h4> Sintaxis </h4>
     
             <div class="sintaxis">
-                <p>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</p>
+                <p> &lt;i&gt;... &lt;/i&gt;
             </div>
-    
+
             <div class="ejemplo">
                 <h4> Ejemplo  sintaxis</h4>
-                <p>&lt;p&gt; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, quae!.&lt;/p&gt;</p>
+                <p > &lt;i&gt;....&lt;/i&gt;</p>
                 <h4> Ejemplo  ejecutado</h4>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, maiores.</p>
+                <p > &lt;i&gt;Texto en cursiva&lt;/i&gt;</p>
+            </div>
+
+            </div>
+
+            <!-- 10 -->
+            <div class="card">
+                    <h1 id="p"> p </h1>
+                <h4> Definicion </h4>
+                <p> La etiqueta p define un párrafo de texto.</p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p>&lt;p&gt; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, quae!.&lt;/p&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, maiores.</p>
+                </div>
+                
+            </div>
+
+            <!-- 11 -->
+            <div class="card">
+        <h1 id="title"> title </h1>
+    <h4> Definicion </h4>
+    <p> Define el título de la página web que aparece en la pestaña del navegador.</p>
+
+    <h4> Sintaxis </h4>
+
+    <div class="sintaxis">
+        <p>&lt;title&gt;-----&lt;/title&gt;</p>
+    </div>
+
+    <div class="ejemplo">
+        <h4> Ejemplo  sintaxis</h4>
+        <p>&lt;title&gt;Etiquetas de Html&lt;/title&gt;</p>
+        <h4> Ejemplo  ejecutado</h4>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, maiores.</p>
+    </div>
+    
             </div>
             
-            </div>
-            
-            <!-- 6 -->
+            <!-- 12 -->
             <div class="card">
                 <h1 id="ul"> ul, ol, li </h1>
                 <h4> Definicion </h4>
@@ -221,8 +375,8 @@
     
                 </div>
             </div>
-          
-            <!-- 7 -->
+
+            <!-- 13-->
             <div class="card">
                 <h1 id="span"> span </h1>
                 <h4> Definicion </h4>
@@ -243,8 +397,29 @@
     
                 
             </div>
+
+            <!-- 14 -->
+            <div class="card">
+                <h1 id="strong"> Strong </h1>
+                <h4> Definicion </h4>
+                <p> se utiliza para definir texto que se considera de importancia semántica fuerte o enfática, generalmente 
+                    indicando que su contenido debe ser mostrado en negrita por los navegadores web. </p>
+        
+                <h4> Sintaxis </h4>
+        
+                <div class="sintaxis">
+                    <p> &lt;strong&gt; ... &lt;/strong&gt;</p>
+                </div>
+        
+                <div class="ejemplo">
+                    <h4> Ejemplo  sintaxis</h4>
+                    <p> &lt;strong&gt; ... &lt;/strong&gt;</p>
+                    <h4> Ejemplo  ejecutado</h4>
+                    <strong> Letra en negrilla </strong>
+                </div>
+            </div>
            
-            <!-- 8 -->
+            <!-- 15 -->
             <div class="card">
                 <h1 id="table"> table </h1>
                 <h4> Definicion </h4>
@@ -289,8 +464,8 @@
                     </table>
                 </div>
             </div>
-           
-        </div>
-     </div>
+        </div>    
+        
+        <!-- <img class="fondo" src="Imagenes/backgraund.png" alt="imagenDeFondo"> -->
 </body>
 </html>
