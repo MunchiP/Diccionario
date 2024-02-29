@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- icono <> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- bootstrap -->
+     <!-- IconAwesome -->
+     <script src="https://kit.fontawesome.com/55a1e21480.js" crossorigin="anonymous"></script>
+     <!-- bootstrap -->
     <title>Diccionario</title>
 </head>
 <body>
@@ -50,15 +52,15 @@
         <p class="cuartoColor"></p>
         
     </div>
-    <div class="menu">
-        <p class="titulo"> <a class="eMenu" href="index.html">Inicio</a> </p>
-        <p class="titulo"> <a class="eMenu" href="etiquetas.html">Etiquetas</a> </p>
-        <p class="titulo"> <a class="eMenu" href="eSelfclosing.html">Etiquetas - Selfclosing</a> </p>
+    <div class="menuSelf">
+        <p class="titulo nativo"> <a class="eMenu" href="index.html">Inicio</a> </p>
+        <p class="titulo tituloEtiqueta"> <a class="eMenu" href="etiquetas.html">Etiquetas</a> </p>
+        <p class="titulo tituloSelf"> <a class="eMenu" href="eSelfclosing.html">Etiquetas - Selfclosing</a> </p>
+        <i class="fa-regular fa-file-code"></i>
     </div>
     
     <div class="container">
         <nav class="menuV">
-            <p class="subtitulo"> * etiquetas - selfclosing * </p>
             <ol>
                 <li>  <a class="etiquetaNombre" href="#Doc"> <strong> !DOCTYPE </strong> </a>  </li>
                 <li>  <a class="etiquetaNombre" href="#img"> <strong> img </strong> </a>  </li>
@@ -74,170 +76,172 @@
     </div>   
         <div class="contenedor">
             
-            <!-- 1 -->
+            <!-- 1 doctype-->
             <div class="card">
                 <h1 id="Doc"> !DOCTYPE </h1>
-                <h4> Definicion </h4>
-                <p> Se utiliza para especificar la versión de HTML que se está utilizando en la página.</p>
-                
-                <h4> Sintaxis </h4>
+                <p><strong class="Uno"> Definición: </strong>
+                    Se utiliza para especificar la versión de HTML que se está utilizando en la página.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
                 
                 <div class="sintaxis">
                     <p >&lt;!DOCTYPE&gt;</p>
                 </div>
                 
                 <div class="ejemplo">
-                    <h4> Ejemplo  sintaxis</h4>
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
                     <p> &lt;!DOCTYPE&gt;</p>
-                    
-                    <!-- <h4> Ejemplo  ejecutado</h4>
-                        <p> <img src="code-school.svg"> </p> -->
-                    </div>
+                </div>
             </div>
                 
-            <!-- 2 -->
+            <!-- 2 img -->
             <div class="card">
-                    <h1 id="img"> img </h1>
-                    <h4> Definicion </h4>
-                    <p> Define una imagen en línea en un documento HTML.</p>
+                <h1 id="img"> img </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define una imagen en línea en un documento HTML.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p >&lt;img src="ruta_de_la_imagen</p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p> &lt;img src="ruta_de_la_imagen</p>
                     
-                    <h4> Sintaxis </h4>
-                    
-                    <div class="sintaxis">
-                        <p >&lt;img src="ruta_de_la_imagen</p>
-                    </div>
-                    
-                    <div class="ejemplo">
-                        <h4> Ejemplo  sintaxis</h4>
-                        <p> &lt;img src="ruta_de_la_imagen</p>
-                        
-                        <h4> Ejemplo  ejecutado</h4>
-                        <p> <img src="code-school.svg"> </p>
-                    </div>
+                    <h4 class="Cuatro"> Ejemplo  ejecutado</h4>
+                    <p> <img src="code-school.svg"> </p>
+                </div>
             </div>
                 
-            <!-- 3 -->
+            <!-- 3 br -->
             <div class="card">
-                    <h1 id="br"> br </h1>
-                    <h4> Definicion </h4>
-                    <p>  Define un salto de línea en un documento HTML.</p>
-                    
-                    <h4> Sintaxis </h4>
-                    
-                    <div class="sintaxis">
-                        <p> &lt;br&gt; </p>
+                <h1 id="br"> br </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define un salto de línea en un documento HTML.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p> &lt;br&gt; </p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p>  &lt;br&gt; </p>
+                    <h4 class="Cuatro"> Ejemplo  ejecutado</h4>
+                    <div>
+                        <p> Primera linea de texto</p>
+                        <br>
+                        <p> Segunda linea despues del br </p>
                     </div>
-                    
-                    <div class="ejemplo">
-                        <h4> Ejemplo  sintaxis</h4>
-                        <p>  &lt;br&gt; </p>
-                        <h4> Ejemplo  ejecutado</h4>
-                        <div>
-                            <br>
-                        </div>
-                    </div>
+                </div>
             </div>
                 
-            <!-- 4 -->
+            <!-- 4 input -->
             <div class="card">
-                    <h1 id="input"> input </h1>
-                    <h4> Definicion </h4>
-                    <p>  Define un campo de entrada en un formulario HTML.</p>
-                    
-                    <h4> Sintaxis </h4>
-                    
-                    <div class="sintaxis">
-                        <p>&lt;input type="tipo_de_input" name="nombre_del_input"&gt;</p>
-                    </div>
-                    
-                    <div class="ejemplo">
-                        <h4> Ejemplo  sintaxis</h4>
-                        <p> &lt;input type="tipo_de_input" name="nombre_del_input"&gt; </p>
-                        <h4> Ejemplo  ejecutado</h4>
-                        <input type="text" name="nombre">
-                    </div>
+                <h1 id="input"> input </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define un campo de entrada en un formulario HTML.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p>&lt;input type="tipo_de_input" name="nombre_del_input"&gt;</p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p> &lt;input type="tipo_de_input" name="nombre_del_input"&gt; </p>
+                    <h4 class="Cuatro"> Ejemplo  ejecutado</h4>
+                    <input type="text" name="nombre">
+                </div>
             </div>
                 
-            <!-- 5 -->
+            <!-- 5 ht -->
             <div class="card">
-                    <h1 id="hr"> hr </h1>
-                    <h4> Definicion </h4>
-                    <p>Define una línea horizontal en un documento HTML para separar contenido.</p>
+                <h1 id="hr"> hr </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define una línea horizontal en un documento HTML para separar contenido.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p>  &lt;hr&gt;         
+                    </p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>  
+                    &lt;hr&gt; 
+                    <h4 class="Cuatro"> Ejemplo  sintaxis</h4>       
+                    <hr>
+                </div>      
+            </div>
                     
-                    <h4> Sintaxis </h4>
+            <!-- 6 meta -->
+            <div class="card">
+                <h1 id="meta"> meta </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define metadatos sobre el documento HTML, como la codificación de caracteres, la descripción, palabras clave, etc.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p>&lt;meta atributo="valor"&gt;</p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p>&lt;meta atributo="valor"&gt;</p>
+                </div>
+            </div>
                     
-                    <div class="sintaxis">
-                        <p> 
-                            &lt;hr&gt;         
-                        </p>
+            <!-- 7 link -->
+            <div class="card">
+                <h1 id="link"> link </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Define la relación entre el documento actual y un recurso externo, como una hoja de estilos CSS.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p> &lt;link rel="relacion" href="ruta_del_recurso"&gt; </p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p> &lt;link rel="relacion" href="ruta_del_recurso"&gt;</p>
+                    <h4 class="Cuatro"> Ejemplo  ejecutado</h4>
+                    <p> <link rel="stylesheet" href="estilos.css"></p> 
+                </div>
+            </div>
+                    
+            <!-- 8 embed-->
+            <div class="card">
+                <h1 id="embed"> embed </h1>
+                <p><strong class="Uno"> Definición: </strong>
+                    Incrusta contenido externo, como imágenes, audio o video, en un documento HTML.
+                </p>
+
+                <h4 class="Dos"> Sintaxis </h4>
+                
+                <div class="sintaxis">
+                    <p> &lt;embed src="ruta_del_contenido" type="tipo_de_contenido"&gt;</p>
+                </div>
+                
+                <div class="ejemplo">
+                    <h4 class="Tres"> Ejemplo  sintaxis</h4>
+                    <p> <embed src="video.mp4" type="video/mp4"> </p>
                     </div>
-                    
-                    <div class="ejemplo">
-                        <h4> Ejemplo  sintaxis</h4>
-                        <p>         
-                            <hr>
-                        </div>
-                        
-            </div>
-                    
-            <!-- 6 -->
-            <div class="card">
-                        <h1 id="meta"> meta </h1>
-                        <h4> Definicion </h4>
-                        <p> Define metadatos sobre el documento HTML, como la codificación de caracteres, la descripción, palabras clave, etc.</p>
-                        
-                        <h4> Sintaxis </h4>
-                        
-                        <div class="sintaxis">
-                            <p>&lt;meta atributo="valor"&gt;</p>
-                        </div>
-                        
-                        <div class="ejemplo">
-                            <h4> Ejemplo  sintaxis</h4>
-                            <p>&lt;meta atributo="valor"&gt;</p>
-                            <h4> Ejemplo  ejecutado</h4>
-                            <p> <meta charset="UTF-8"></p>
-                        </div>
-                        
-            </div>
-                    
-            <!-- 7 -->
-            <div class="card">
-                        <h1 id="link"> link </h1>
-                        <h4> Definicion </h4>
-                        <p> Define la relación entre el documento actual y un recurso externo, como una hoja de estilos CSS.</p>
-                        
-                        <h4> Sintaxis </h4>
-                        
-                        <div class="sintaxis">
-                            <p> &lt;link rel="relacion" href="ruta_del_recurso"&gt; </p>
-                        </div>
-                        
-                        <div class="ejemplo">
-                            <h4> Ejemplo  sintaxis</h4>
-                            <p> &lt;link rel="relacion" href="ruta_del_recurso"&gt;</p>
-                            <h4> Ejemplo  ejecutado</h4>
-                            <p> <link rel="stylesheet" href="estilos.css"></p> 
-                            
-                        </div>
-            </div>
-                    
-            <!-- 8 -->
-            <div class="card">
-                        <h1 id="embed"> embed </h1>
-                        <h4> Definicion </h4>
-                        <p> Incrusta contenido externo, como imágenes, audio o video, en un documento HTML.</p>
-                        
-                        <h4> Sintaxis </h4>
-                        
-                        <div class="sintaxis">
-                            <p> &lt;embed src="ruta_del_contenido" type="tipo_de_contenido"&gt;</p>
-                        </div>
-                        
-                        <div class="ejemplo">
-                            <h4> Ejemplo  sintaxis</h4>
-                            <p> <embed src="video.mp4" type="video/mp4"> </p>
-                            </div>
             </div>         
         </div>
 

@@ -1,5 +1,11 @@
 body{
     margin: auto;
+    background-image: url(Imagenes/backgraund.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5px;
+    background-position: bottom;
+    /* line-height: 15px; */
 }
 
 .superior{
@@ -30,11 +36,27 @@ width: 45px;
     background-color: #ff6e49;
 }
 
+.Uno{
+    color: #2f1335
+}
+
+.Dos{
+    color: #620e5d;
+}
+
+.Tres{
+    color: #ce3762;
+}
+
+.Cuatro{
+    color: #ff6e49;
+}
+
 #gifContainer{
     overflow: hidden;
 }
 
-.menu {
+.menu , .menuEtiquetas , .menuSelf {
     height: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -60,9 +82,11 @@ img{
 }
 
 .titulo {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    margin-top: -1px ;
     font-size: 20px;
     color: aliceblue;
     text-decoration: none;
@@ -76,16 +100,23 @@ img{
     text-decoration: none;
 }
 
-.eMenu:hover{
-    background-color: #9d007a;
-    margin-top: -20px;
-    padding: 18px;
-    /* border-radius: 20px; */
+.nativo:hover {
+    background-color: #2f1335;
+    transition: 0.5s;
+}
+
+.tituloEtiqueta:hover{
+    background-color: #ce3762;
+    transition: 0.5s;
+}
+
+.tituloSelf:hover{
+    background-color: #ff6e49;
     transition: 0.5s;
 }
 
 li , ol , .etiquetaNombre{
-    color: rgb(0, 0, 0);
+    color: aliceblue;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -102,7 +133,7 @@ li , ol , .etiquetaNombre{
 }
 
 .cuerpo:hover{
-    color: color-mix(in srgb, rgb(3, 3, 103) 50%, lightblue 50%);
+    color: #ff6e49;
 }
 
 .mensaje{
@@ -118,20 +149,21 @@ li , ol , .etiquetaNombre{
 }
 
 p{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* etiquetas.html */
 
-.menuV{
+.menuV , .container{
+    height: 700px;
+    width: 160px;
+    background-color: #2f1335;
     position: sticky;
-    overflow-y: auto;
     top: 0;
+    overflow-y: auto;
     z-index: 1000;
-    width: 150px;
-    background-color: rgb(245, 231, 213);
-    height: 680px;
 }
+
 
 ol{
     margin-top: auto;
@@ -143,23 +175,8 @@ li{
     margin-top: 1rem;
 }
 
-.frameMenu{
-    margin: -3px;
-    width: 100% !important;
-    height: 90px;
-}
-
-.subtitulo{
-    margin: none;
-    margin-top: 0;
-    /* margin-left: 1rem; */
-    background-color: #53ADC0;
-    color: rgb(30, 0, 139);
-}
-
 .contenedor{
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: -43rem;
@@ -172,8 +189,9 @@ li{
 
 .card{
     box-shadow: 10px 10px 10px gray;
-    width: 300px;
-    margin-right: 3rem;
+    width: 490px;
+    margin-right: 1rem;
+    margin-left: 2rem;
 }
 
 .ejemplo{
@@ -181,14 +199,24 @@ li{
 }
 
 
+/* icono */
 
-body{
-    background-image: url(Imagenes/backgraund.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 5px;
-    /* height: 100px;
-    margin-left: 10rem;
-    margin-top: 30rem; */
-    background-position: bottom;
+.fa-code , .fa-file-code{
+    color: aliceblue;
+    margin-left: 47rem;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+aside {
+    /* float: right; */
+    width: 350px;
+    background-color: #f0f0f0;
+    /* padding: 10px; */
+    /* margin-left: 10px; */
+}
+
+
+.ejP{
+    color: black;
 }
